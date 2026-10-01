@@ -3,14 +3,14 @@ import Navbar from "@/components/layout/Navbar";
 
 export default function Hero() {
   return (
-    <section className="relative h-[1024px] overflow-hidden bg-primary text-center text-white">
+    <section className="relative h-256 overflow-hidden bg-grid bg-primary text-center text-white">
       <Image
         src="/images/hero/3d_ornament.png"
         alt=""
         width={1440}
         height={803}
         priority
-        className="pointer-events-none absolute left-0 top-[221px] z-0 w-full"
+        className="pointer-events-none absolute left-0 top-55.25 z-0 w-full"
       />
 
       <div className="relative z-10">
