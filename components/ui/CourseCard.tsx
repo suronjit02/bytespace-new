@@ -9,7 +9,7 @@ type courseCardProps = {
 const CourseCard = ({ course }: courseCardProps) => {
   return (
     <div className="border border-gray-300 p-4 rounded-2xl shadow-xs space-y-4">
-      <Image width={300} height={200} src={course.image} alt={course.title} />
+      <Image width={400} height={300} src={course.image} alt={course.title} />
 
       {/* Course Details */}
       <div className="flex justify-between items-start text-left">

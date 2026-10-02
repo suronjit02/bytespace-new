@@ -65,6 +65,7 @@ export default function Courses() {
         <button className="px-2 py-2 text-xs text-primary">+ More</button>
       </div>
 
+      {/* Course Cards */}
       <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {courses.map((course: Course) => (
           <CourseCard key={course.id} course={course} />

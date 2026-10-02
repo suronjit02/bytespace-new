@@ -17,10 +17,34 @@ body {
   color: var(--color-ink);
 }
 
+/* hero section */
 .bg-grid {
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
   background-size: 100px 100px;
   background-position: center top;
+}
+
+/* soft gradient background growth section */
+.bg-soft-gradient {
+  background:
+    radial-gradient(
+      circle at 25% 0%,
+      rgba(212, 251, 32, 0.45),
+      transparent 25%
+    ),
+    radial-gradient(circle at 0% 30%, rgba(0, 59, 226, 0.18), transparent 25%),
+    radial-gradient(
+      circle at 100% 15%,
+      rgba(0, 59, 226, 0.12),
+      transparent 25%
+    ),
+    radial-gradient(circle at 0% 90%, rgba(212, 251, 32, 0.4), transparent 25%),
+    radial-gradient(
+      circle at 100% 95%,
+      rgba(0, 59, 226, 0.18),
+      transparent 25%
+    ),
+    #fafafa;
 }
