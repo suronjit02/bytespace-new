@@ -1,3 +1,4 @@
+import Categories from "@/components/sections/Categories";
 import Courses from "@/components/sections/Courses";
 import Footer from "@/components/sections/Footer";
 import Hero from "@/components/sections/Hero";
@@ -9,6 +10,8 @@ export default function Home() {
       <Hero />
       <Logos />
       <Courses />
+      <Categories />
+
       <Footer />
     </main>
   );
