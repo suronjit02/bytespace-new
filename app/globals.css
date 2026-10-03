@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #003be2;
+  --color-lime: #d4fb20;
+  --color-ink: #242528;
+  --color-gray-soft: #f5f5f6;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-satoshi), sans-serif;
+  --font-heading: var(--font-poppins), sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: var(--color-ink);
+}
+
+/* hero section */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 100px 100px;
+  background-position: center top;
+}
+
+/* soft gradient background growth section */
+.bg-soft-gradient {
+  background:
+    radial-gradient(
+      circle at 25% 0%,
+      rgba(212, 251, 32, 0.45),
+      transparent 25%
+    ),
+    radial-gradient(circle at 0% 30%, rgba(0, 59, 226, 0.18), transparent 25%),
+    radial-gradient(
+      circle at 100% 15%,
+      rgba(0, 59, 226, 0.12),
+      transparent 25%
+    ),
+    radial-gradient(circle at 0% 90%, rgba(212, 251, 32, 0.4), transparent 25%),
+    radial-gradient(
+      circle at 100% 95%,
+      rgba(0, 59, 226, 0.18),
+      transparent 25%
+    ),
+    #fafafa;
 }
