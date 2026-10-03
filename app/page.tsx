@@ -5,6 +5,7 @@ import Growth from "@/components/sections/Growth";
 import Hero from "@/components/sections/Hero";
 import JoinAsCreator from "@/components/sections/JoinAsCreator";
 import Logos from "@/components/sections/Logos";
+import Testimonials from "@/components/sections/Testimonials";
 import { Joan } from "next/font/google";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Categories />
       <Growth />
       <JoinAsCreator />
+      <Testimonials />
       <Footer />
     </main>
   );

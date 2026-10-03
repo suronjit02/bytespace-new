@@ -48,3 +48,20 @@ body {
     ),
     #fafafa;
 }
+
+/* bg testimonial */
+.bg-testimonials-gradient {
+  background:
+    radial-gradient(
+      circle at 50% 20%,
+      rgba(212, 251, 32, 0.4),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 100% 50%,
+      rgba(212, 251, 32, 0.35),
+      transparent 30%
+    ),
+    radial-gradient(circle at 5% 100%, rgba(0, 59, 226, 0.2), transparent 30%),
+    #fafafa;
+}
